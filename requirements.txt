@@ -1,0 +1,6 @@
+langgraph
+langchain-anthropic
+langchain-core
+fastapi
+uvicorn[standard]
+python-dotenv
