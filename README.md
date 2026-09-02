@@ -56,6 +56,8 @@ curl -X POST http://localhost:8000/ask ^
 You get back the answer plus the full trace as JSON: every thought, tool call,
 and observation the agent went through to get there.
 
+There's also a `GET /health` endpoint if you just want to check the server is up.
+
 ## The two tools
 
 | Tool | Input | What it does |
