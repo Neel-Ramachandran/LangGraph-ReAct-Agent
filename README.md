@@ -45,7 +45,8 @@ Or run it as a web API and POST questions to it:
 python server.py
 ```
 
-Then in another terminal:
+Then in another terminal (the `^` line continuation below is cmd.exe syntax; use `` ` `` in
+PowerShell or `\` in bash/zsh):
 
 ```
 curl -X POST http://localhost:8000/ask ^
