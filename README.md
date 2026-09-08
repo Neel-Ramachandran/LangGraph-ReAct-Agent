@@ -81,10 +81,11 @@ only differ in how they show the result:
 So there's a single source of truth for what the agent is, and adding a tool or
 swapping the model only happens in one place.
 
-The loop keeps going until the model stops asking for tools, with a step limit so
-a misbehaving tool can't spin forever. The interesting bit is that when the model
-calls more than one tool in a single turn, both results get recorded, not just
-the last one.
+The loop keeps going until the model stops asking for tools, with a 25-step
+recursion limit so a misbehaving tool can't spin forever (past that, the CLI
+prints `[STOPPED]` and the API returns an `error` field instead of an answer).
+The interesting bit is that when the model calls more than one tool in a single
+turn, both results get recorded, not just the last one.
 
 ## Built with
 
