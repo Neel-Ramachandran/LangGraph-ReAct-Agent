@@ -69,6 +69,10 @@ There's also a `GET /health` endpoint if you just want to check the server is up
 They're deliberately simple. The point isn't the tools, it's watching the model
 decide which one to reach for and when.
 
+Note: `calculator` evaluates expressions with `eval()` (restricted to `math` and
+no builtins). That's demo-grade, not a real sandbox — don't expose it to
+untrusted input without hardening it first.
+
 ## How it's put together
 
 The agent itself lives in one file, `agent.py`: the tools, the model, the graph,
