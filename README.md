@@ -59,6 +59,9 @@ and observation the agent went through to get there.
 
 There's also a `GET /health` endpoint if you just want to check the server is up.
 
+Note: the server binds to `0.0.0.0` with no auth, no CORS config, and no rate
+limiting — fine for local use, not something to expose on a network as-is.
+
 ## The two tools
 
 | Tool | Input | What it does |
