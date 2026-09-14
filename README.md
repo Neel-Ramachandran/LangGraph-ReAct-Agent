@@ -19,6 +19,8 @@ it answers. LangGraph is what wires those steps into a graph and runs the loop.
 
 ## Setup
 
+Requires Python 3.11+ (the `calculator` tool relies on `math.cbrt`, added in 3.11).
+
 ```
 python -m venv .venv
 .venv\Scripts\activate       # Windows; use "source .venv/bin/activate" on macOS/Linux
