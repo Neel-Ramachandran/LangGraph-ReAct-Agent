@@ -47,6 +47,8 @@ Or run it as a web API and POST questions to it:
 python server.py
 ```
 
+(or `uvicorn server:app --reload --port 8000` if you want auto-reload while developing)
+
 Then in another terminal (the `^` line continuation below is cmd.exe syntax; use `` ` `` in
 PowerShell or `\` in bash/zsh):
 
