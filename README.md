@@ -44,7 +44,7 @@ python react_agent.py
 Or run it as a web API and POST questions to it:
 
 ```
-python server.py
+python server.py       # runs on 0.0.0.0:8000 by default
 ```
 
 (or `uvicorn server:app --reload --port 8000` if you want auto-reload while developing)
