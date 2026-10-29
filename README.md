@@ -59,7 +59,9 @@ curl -X POST http://localhost:8000/ask ^
 ```
 
 You get back the answer plus the full trace as JSON: every thought, tool call,
-and observation the agent went through to get there.
+and observation the agent went through to get there. The response has
+`question`, `answer`, and `trace` keys; an `error` key only shows up if the
+agent hit the recursion limit, in which case `answer` is `null`.
 
 There's also a `GET /health` endpoint if you just want to check the server is up.
 
