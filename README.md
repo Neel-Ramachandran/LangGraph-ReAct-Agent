@@ -63,7 +63,8 @@ and observation the agent went through to get there. The response has
 `question`, `answer`, and `trace` keys; an `error` key only shows up if the
 agent hit the recursion limit, in which case `answer` is `null`.
 
-There's also a `GET /health` endpoint if you just want to check the server is up.
+There's also a `GET /health` endpoint if you just want to check the server is
+up — it returns `{"status": "ok"}`.
 
 Note: the server binds to `0.0.0.0` with no auth, no CORS config, and no rate
 limiting — fine for local use, not something to expose on a network as-is.
