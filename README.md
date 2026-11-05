@@ -99,7 +99,7 @@ The loop keeps going until the model stops asking for tools, with a 25-step
 recursion limit so a misbehaving tool can't spin forever (past that, the CLI
 prints `[STOPPED]` and the API returns an `error` field instead of an answer).
 The interesting bit is that when the model calls more than one tool in a single
-turn, both results get recorded, not just the last one.
+turn, all of their results get recorded, not just the last one.
 
 ## Built with
 
