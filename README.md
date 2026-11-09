@@ -49,8 +49,10 @@ python server.py       # runs on 0.0.0.0:8000 by default
 
 (or `uvicorn server:app --reload --port 8000` if you want auto-reload while developing)
 
-Then in another terminal (the `^` line continuation below is cmd.exe syntax; use `` ` `` in
-PowerShell or `\` in bash/zsh):
+Then in another terminal (the command below is cmd.exe syntax — the `^` line
+continuation and `\"`-escaped JSON only work there; on PowerShell or bash/zsh,
+use `` ` `` or `\` to continue lines and wrap the JSON body in single quotes
+instead, e.g. `-d '{"question": "..."}'`):
 
 ```
 curl -X POST http://localhost:8000/ask ^
